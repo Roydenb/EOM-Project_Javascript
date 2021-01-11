@@ -158,11 +158,77 @@ nav li a:hover {
   background-color: red;
   text-align: center;
   line-height: 200px;
-  font-family: "Roboto-Regular", Roboto, Helvetica, Arial;
 }
 
 
 /*Portfolio*/
+body
+{
+  font-family: 'Arimo';
+  margin:0; 
+  padding:0;
+ background: rgb(2,0,36);
+}
+/*This is the basic setup for the page as a whole
+-font-family is an imported font that I think looks cool 
+-margin and padding set to 0 to ensure that content is not on the right edge of the page 
+-background sets the basic blue color in use.I like the space blue vibe it gives off 
+*/
+
+h1 
+{
+color: white;
+text-align: center;
+font-style: italic;
+font-size: 2rem
+}
+.gallery 
+{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+grid-auto-rows: 14rem;
+grid-gap: 1rem;
+grid-auto-flow: dense;
+justify-items: center; 
+margin: 1%; 
+padding: 2rem;
+}
+/*Parameters for the Grid of images 
+-display grid: will show the content in one grid 
+-template-columns: sets the min and mix size of the columns for the grid depending on the size of the page 
+-auto-rows: sets the heught of each row. You could set mins and max for this, but I felt like it looked better with a singular value for right now. Plus there is still a decent level of responsive transition moving from desktop to phone 
+-grid gap: just used for spacing so each div isnt extremely close to the other 
+-auto flow dense: used for placement arrangement 
+*/
+
+img 
+{
+height: 100%;
+width: 100%;
+object-fit: cover;
+display:block;
+}
+/*Used to ensure that the images maintain their full height and width*/
+
+div 
+{
+ overflow: hidden;
+ text-align: center; 
+ position: relative;
+}
+
+.bio 
+{
+color: white;
+position:absolute;
+}
+
+.art:hover 
+{
+transform: scale(1.05);
+cursor: pointer; 
+border: 5px solid white; 
+}
 
 /*Resume*/
 body {
@@ -277,7 +343,78 @@ hr {
   margin: 0 10% 0 0;
 }
 /*Skill bar*/
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
 
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}
 /*Testimonials*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
