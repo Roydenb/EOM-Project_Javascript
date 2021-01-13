@@ -4,5 +4,3 @@ $(".bar").each(function(){
     },2000)
   });
 
-  //Skill bar
-  
