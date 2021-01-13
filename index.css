@@ -10,13 +10,15 @@
   background-repeat:no-repeat;
   background-position:center;
   background-color: #000;
+  background-image: url("./images/Royden\ Botha\ \(1\).JPG");
 }
 
 .landing-text-inner{
   background:rgba(0,0,0,0.6);
   padding:5rem 3rem;
   display:block;
-  width:75%
+  width:75%;
+  color:red;
 }
 .btn{
   text-decoration:none;
@@ -37,7 +39,7 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #444;
+  color: black;
   line-height: 1.8;
   font-weight: 300;
   font-size: 100%;
@@ -134,20 +136,6 @@ nav li a:hover {
   flex-direction: column;
 }
 
-#name {
-  margin-top: 12px;
-  border: none;
-  border-bottom: 1px solid #aaa;
-  background-color: #fafafa;
-  text-align: center;
-  outline: none;
-  font-size: 1rem;
-  font-family: Roboto, Helvetica, Arial;
-}
-
-#name:focus {
-  border-bottom: 2px solid #555;
-}
 
 #no-avatar {
   width: 200px;
