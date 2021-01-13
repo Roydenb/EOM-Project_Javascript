@@ -157,11 +157,6 @@ body
   padding:0;
  background: rgb(2,0,36);
 }
-/*This is the basic setup for the page as a whole
--font-family is an imported font that I think looks cool 
--margin and padding set to 0 to ensure that content is not on the right edge of the page 
--background sets the basic blue color in use.I like the space blue vibe it gives off 
-*/
 
 h1 
 {
