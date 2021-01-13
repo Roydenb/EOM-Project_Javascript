@@ -2,7 +2,7 @@
 /*Landing page*/
 .landing-page{
   display:flex;
-  height:100vh;
+  height:200vh;
   justify-content:center;
   align-items:center;
   text-align:center;
@@ -10,7 +10,7 @@
   background-repeat:no-repeat;
   background-position:center;
   background-color: #000;
-  background-image: url("./images/Royden\ Botha\ \(1\).JPG");
+  background-image: url("./images/art\(1\).jpg");
 }
 
 .landing-text-inner{
