@@ -10,7 +10,6 @@
   background-image: url("../EOM_Javascript/images/art\(1\).jpg");
   background-repeat:no-repeat;
   background-position:center;
-  background-color: #000;
 }
 
 .landing-text-inner{
@@ -176,13 +175,6 @@ justify-items: center;
 margin: 1%; 
 padding: 2rem;
 }
-/*Parameters for the Grid of images 
--display grid: will show the content in one grid 
--template-columns: sets the min and mix size of the columns for the grid depending on the size of the page 
--auto-rows: sets the heught of each row. You could set mins and max for this, but I felt like it looked better with a singular value for right now. Plus there is still a decent level of responsive transition moving from desktop to phone 
--grid gap: just used for spacing so each div isnt extremely close to the other 
--auto flow dense: used for placement arrangement 
-*/
 
 img 
 {
